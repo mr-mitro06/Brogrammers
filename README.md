@@ -77,7 +77,7 @@ For Hardware:
 *Explain what the video demonstrates*
 
 # Additional Demos
-[https://brogrammers-lol1yjrgm-abhinav-das-projects-f679f7e7.vercel.app/]
+[https://brogrammers.vercel.app/]
 
 ## Team Contributions
 - [AKSHAY CIBI]: [FRONT END/BACK END]
