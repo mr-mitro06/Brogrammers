@@ -1,0 +1,84 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Container box */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255 255 255 / 0.12);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+    max-width: 1080px;
+    width: 95vw;
+}
+
+/* Canvas */
+canvas {
+    width: 1000px;  /* visually bigger */
+    height: 1000px;
+    border-radius: 14px;
+    background-color: #fff;
+    border: 3px solid rgba(255 255 255 / 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    touch-action: none;
+}
+
+/* Controls */
+.controls {
+    margin-top: 25px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Buttons */
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(45deg, #6c63ff, #9a85ff);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(108, 99, 255, 0.45);
+    transition: background 0.3s ease, transform 0.15s ease;
+    min-width: 140px;
+    user-select: none;
+}
+
+button:hover, button:focus {
+    background: linear-gradient(45deg, #574fd6, #7a66ff);
+    transform: scale(1.08);
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(80, 75, 180, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1080px) {
+    canvas {
+        width: 90vw;
+        height: 90vw;
+    }
+}
